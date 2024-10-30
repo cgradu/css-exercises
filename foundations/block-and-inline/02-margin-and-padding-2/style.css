@@ -1,3 +1,5 @@
+/* The commented lines represent the solution */
+
 body {
   background: #eee;
   font-family: sans-serif;
@@ -5,23 +7,62 @@ body {
 
 .card {
   width: 400px;
+  padding: 4px;
+  /* padding: 8px; */
+  /* no font-size change */
+  font-size: 12px;
   background: #fff;
   margin: 16px auto;
 }
 
 .title {
+  font-size: 12px;
+  /* font-size: 16px; */
   background: #e3f4ff;
+  padding: 4px;
+  margin-bottom: -2px;
+  /* margin-bottom: 8px; */
 }
 
 .content {
   background: #e3f4ff;
+  margin-top: 8px;
+  /* margin-bottom: 8px; */
+  padding: 6px;
+  /* padding: 16px 8px; */
+  /*
+    First value is for vertical padding (top and bottom)
+    and the second is for horizontal padding(left and right)
+    
+    Equivalent code:
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+  */
 }
 
 .button-container {
+  text-align: center;
+  margin-top: 6px;
+  /* padding: 8px; */
   background: #e3f4ff;
 }
 
 button {
+  margin-left: 140px;
+  /* margin: 0 auto; */
+  /*
+    this means 0 margin top-bottom
+    and auto means to center the element horizontaly within its container
+  */
+  display: block;
   background: white;
+  padding: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  /* padding: 8px 24px; */
   border: 1px solid #eee;
 }
