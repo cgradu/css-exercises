@@ -1,11 +1,15 @@
 .header  {
-  font-family: monospace;
   background: papayawhip;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
 }
 
 .logo {
   font-size: 48px;
-  font-weight: 900;
+  font-weight: bold;
+  font-family: "Lucida Console", "Courier New", monospace;
   color: tomato;
   background: white;
   padding: 4px 32px;
@@ -14,12 +18,20 @@
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  display: flex;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   font-size: 22px;
+  color: blue;
   background: white;
   padding: 8px;
+  font-weight: 600;
+  font-family: "Lucida Console", "Courier New", monospace;
   /* this removes the line under the links */
   text-decoration: none;
+  /* justify-content: space-between; */
 }
