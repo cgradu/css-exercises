@@ -12,6 +12,9 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
 }
 
 .profile-image {
@@ -35,6 +38,8 @@ button {
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
+  /* this centered the button on the vertically */
+  margin: auto;
 }
 
 a {
@@ -45,4 +50,25 @@ a {
 
 ul {
   list-style-type: none;
+  gap: 16px;
+  display: flex;
+  /* this centered the list items on the cross axis */
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
+
+.left {
+  display: flex;
+  /* align-items: center; */
+  gap: 16px;
+}
+
+.right {
+  display: flex;
+  /* align-items: center; */
+  gap: 16px;
+}
+
+/* The difference between my solution and the solution given is that I adjusted the flex items in their flex container instead of aligning the items from the flex container */
+/* The logo and the profile picture seem to be centered vertically by default */
